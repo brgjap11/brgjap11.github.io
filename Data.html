@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style_911.css" rel="stylesheet" />
+    </head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="911_calls.html">Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="Comparison.html">Comparisons</a></li>
+                <li><a href="heatmap.html">Heatmap</a></li>
+                <li><a href="Data.html">Data</a></li>
+            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ems_frequency.html">EMS Response Frequency</a></li>
+                            <li><a href="traffic_frequency.html">Highway Patrol Response Frequency</a></li>
+                            <li><a href="fire_frequency.html">Firefighter Response Frequency</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="911_calls.html">Home</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </div>
+        
+        </div>
+        </div>
+        </div>
+        </nav>
+              
+    
+
+<div class="padding">
+       <div class="container">
+            <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <center><h4>Frequency</h4></center>
+                <table class="table table-sm table-bordered ">
+                        <thead><tr><th title="Field #1">Call ID#</th>
+                        <th title="Field #2">lat</th>
+                        <th title="Field #3">lng</th>
+                        <th title="Field #4">desc</th>
+                        <th title="Field #5">zip</th>
+                        <th title="Field #6">title</th>
+                        <th title="Field #7">timeStamp</th>
+                        <th title="Field #8">twp</th>
+                        <th title="Field #9">addr</th>
+                        <th title="Field #10">e</th>
+                        <th title="Field #11">Reason</th>
+                        <th title="Field #12">Injury</th>
+                        <th title="Field #13">Hour</th>
+                        <th title="Field #14">Month</th>
+                        <th title="Field #15">Day of Week</th>
+                        <th title="Field #16">Date</th>
+                        </tr></thead>
+                        <tbody><tr>
+                        <td align="right">0</td>
+                        <td align="right">40.297875899999994</td>
+                        <td align="right">-75.5812935</td>
+                        <td>REINDEER CT &amp; DEAD END;  NEW HANOVER; Station 332; 2015-12-10 @ 17:10:52;</td>
+                        <td align="right">19525.0</td>
+                        <td>EMS: BACK PAINS/INJURY</td>
+                        <td>2015-12-10 17:40:00</td>
+                        <td>NEW HANOVER</td>
+                        <td>REINDEER CT &amp; DEAD END</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> BACK PAINS/INJURY</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">1</td>
+                        <td align="right">40.2580614</td>
+                        <td align="right">-75.26467990000002</td>
+                        <td>BRIAR PATH &amp; WHITEMARSH LN;  HATFIELD TOWNSHIP; Station 345; 2015-12-10 @ 17:29:21;</td>
+                        <td align="right">19446.0</td>
+                        <td>EMS: DIABETIC EMERGENCY</td>
+                        <td>2015-12-10 17:40:00</td>
+                        <td>HATFIELD TOWNSHIP</td>
+                        <td>BRIAR PATH &amp; WHITEMARSH LN</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> DIABETIC EMERGENCY</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">2</td>
+                        <td align="right">40.121181799999995</td>
+                        <td align="right">-75.3519752</td>
+                        <td>HAWS AVE; NORRISTOWN; 2015-12-10 @ 14:39:21-Station:STA27;</td>
+                        <td align="right">19401.0</td>
+                        <td>Fire: GAS-ODOR/LEAK</td>
+                        <td>2015-12-10 17:40:00</td>
+                        <td>NORRISTOWN</td>
+                        <td>HAWS AVE</td>
+                        <td>1</td>
+                        <td>Fire</td>
+                        <td> GAS-ODOR/LEAK</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">3</td>
+                        <td align="right">40.116153000000004</td>
+                        <td align="right">-75.343513</td>
+                        <td>AIRY ST &amp; SWEDE ST;  NORRISTOWN; Station 308A; 2015-12-10 @ 16:47:36;</td>
+                        <td align="right">19401.0</td>
+                        <td>EMS: CARDIAC EMERGENCY</td>
+                        <td>2015-12-10 17:40:01</td>
+                        <td>NORRISTOWN</td>
+                        <td>AIRY ST &amp; SWEDE ST</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> CARDIAC EMERGENCY</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">4</td>
+                        <td align="right">40.251492</td>
+                        <td align="right">-75.6033497</td>
+                        <td>CHERRYWOOD CT &amp; DEAD END;  LOWER POTTSGROVE; Station 329; 2015-12-10 @ 16:56:52;</td>
+                        <td align="right"></td>
+                        <td>EMS: DIZZINESS</td>
+                        <td>2015-12-10 17:40:01</td>
+                        <td>LOWER POTTSGROVE</td>
+                        <td>CHERRYWOOD CT &amp; DEAD END</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> DIZZINESS</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">5</td>
+                        <td align="right">40.2534732</td>
+                        <td align="right">-75.283245</td>
+                        <td>CANNON AVE &amp; W 9TH ST;  LANSDALE; Station 345; 2015-12-10 @ 15:39:04;</td>
+                        <td align="right">19446.0</td>
+                        <td>EMS: HEAD INJURY</td>
+                        <td>2015-12-10 17:40:01</td>
+                        <td>LANSDALE</td>
+                        <td>CANNON AVE &amp; W 9TH ST</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> HEAD INJURY</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">6</td>
+                        <td align="right">40.1821111</td>
+                        <td align="right">-75.12779509999999</td>
+                        <td>LAUREL AVE &amp; OAKDALE AVE;  HORSHAM; Station 352; 2015-12-10 @ 16:46:48;</td>
+                        <td align="right">19044.0</td>
+                        <td>EMS: NAUSEA/VOMITING</td>
+                        <td>2015-12-10 17:40:01</td>
+                        <td>HORSHAM</td>
+                        <td>LAUREL AVE &amp; OAKDALE AVE</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> NAUSEA/VOMITING</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">7</td>
+                        <td align="right">40.2172859</td>
+                        <td align="right">-75.405182</td>
+                        <td>COLLEGEVILLE RD &amp; LYWISKI RD;  SKIPPACK; Station 336; 2015-12-10 @ 16:17:05;</td>
+                        <td align="right">19426.0</td>
+                        <td>EMS: RESPIRATORY EMERGENCY</td>
+                        <td>2015-12-10 17:40:01</td>
+                        <td>SKIPPACK</td>
+                        <td>COLLEGEVILLE RD &amp; LYWISKI RD</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> RESPIRATORY EMERGENCY</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">8</td>
+                        <td align="right">40.28902670000001</td>
+                        <td align="right">-75.3995896</td>
+                        <td>MAIN ST &amp; OLD SUMNEYTOWN PIKE;  LOWER SALFORD; Station 344; 2015-12-10 @ 16:51:42;</td>
+                        <td align="right">19438.0</td>
+                        <td>EMS: SYNCOPAL EPISODE</td>
+                        <td>2015-12-10 17:40:01</td>
+                        <td>LOWER SALFORD</td>
+                        <td>MAIN ST &amp; OLD SUMNEYTOWN PIKE</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> SYNCOPAL EPISODE</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">9</td>
+                        <td align="right">40.1023985</td>
+                        <td align="right">-75.29145770000001</td>
+                        <td>BLUEROUTE  &amp; RAMP I476 NB TO CHEMICAL RD; PLYMOUTH; 2015-12-10 @ 17:35:41;</td>
+                        <td align="right">19462.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 17:40:01</td>
+                        <td>PLYMOUTH</td>
+                        <td>BLUEROUTE  &amp; RAMP I476 NB TO CHEMICAL RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">10</td>
+                        <td align="right">40.2319898</td>
+                        <td align="right">-75.2518915</td>
+                        <td>RT202 PKWY &amp; KNAPP RD; MONTGOMERY; 2015-12-10 @ 17:33:50;</td>
+                        <td align="right"></td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 17:40:01</td>
+                        <td>MONTGOMERY</td>
+                        <td>RT202 PKWY &amp; KNAPP RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">11</td>
+                        <td align="right">40.0841613</td>
+                        <td align="right">-75.3083857</td>
+                        <td>BROOK RD &amp; COLWELL LN; PLYMOUTH; 2015-12-10 @ 16:32:10;</td>
+                        <td align="right">19428.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 17:40:02</td>
+                        <td>PLYMOUTH</td>
+                        <td>BROOK RD &amp; COLWELL LN</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">12</td>
+                        <td align="right">40.174131200000005</td>
+                        <td align="right">-75.0984907</td>
+                        <td>BYBERRY AVE &amp; S WARMINSTER RD; UPPER MORELAND; 2015-12-10 @ 17:15:49;</td>
+                        <td align="right">19040.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 17:40:02</td>
+                        <td>UPPER MORELAND</td>
+                        <td>BYBERRY AVE &amp; S WARMINSTER RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">13</td>
+                        <td align="right">40.062974</td>
+                        <td align="right">-75.135914</td>
+                        <td>OLD YORK RD &amp; VALLEY RD; CHELTENHAM; 2015-12-10 @ 17:12:47;</td>
+                        <td align="right">19027.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 17:40:02</td>
+                        <td>CHELTENHAM</td>
+                        <td>OLD YORK RD &amp; VALLEY RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">14</td>
+                        <td align="right">40.0972222</td>
+                        <td align="right">-75.3761952</td>
+                        <td>SCHUYLKILL EXPY &amp; CROTON RD UNDERPASS; UPPER MERION; 2015-12-10 @ 17:09:49;</td>
+                        <td align="right"></td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 17:40:02</td>
+                        <td>UPPER MERION</td>
+                        <td>SCHUYLKILL EXPY &amp; CROTON RD UNDERPASS</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">15</td>
+                        <td align="right">40.2237777</td>
+                        <td align="right">-75.2353993</td>
+                        <td>STUMP RD &amp; WITCHWOOD DR; MONTGOMERY; 2015-12-10 @ 17:31:00;</td>
+                        <td align="right">18936.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 17:40:02</td>
+                        <td>MONTGOMERY</td>
+                        <td>STUMP RD &amp; WITCHWOOD DR</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">16</td>
+                        <td align="right">40.243257799999995</td>
+                        <td align="right">-75.2865516</td>
+                        <td>SUSQUEHANNA AVE &amp; W MAIN ST;  LANSDALE; Station 345B; 2015-12-10 @ 17:42:44;</td>
+                        <td align="right">19446.0</td>
+                        <td>EMS: RESPIRATORY EMERGENCY</td>
+                        <td>2015-12-10 17:46:01</td>
+                        <td>LANSDALE</td>
+                        <td>SUSQUEHANNA AVE &amp; W MAIN ST</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> RESPIRATORY EMERGENCY</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">17</td>
+                        <td align="right">40.312180700000006</td>
+                        <td align="right">-75.5742598</td>
+                        <td>CHARLOTTE ST &amp; MILES RD;  NEW HANOVER; Station 332; 2015-12-10 @ 17:41:54;</td>
+                        <td align="right">19525.0</td>
+                        <td>EMS: DIZZINESS</td>
+                        <td>2015-12-10 17:47:01</td>
+                        <td>NEW HANOVER</td>
+                        <td>CHARLOTTE ST &amp; MILES RD</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> DIZZINESS</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">18</td>
+                        <td align="right">40.114239000000005</td>
+                        <td align="right">-75.33850799999999</td>
+                        <td>PENN ST &amp; ARCH ST;  NORRISTOWN; Station 308A; 2015-12-10 @ 17:43:29;</td>
+                        <td align="right">19401.0</td>
+                        <td>EMS: VEHICLE ACCIDENT</td>
+                        <td>2015-12-10 17:47:01</td>
+                        <td>NORRISTOWN</td>
+                        <td>PENN ST &amp; ARCH ST</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> VEHICLE ACCIDENT</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">19</td>
+                        <td align="right">40.209336900000004</td>
+                        <td align="right">-75.1352655</td>
+                        <td>COUNTY LINE RD &amp; WILLOW DR; HORSHAM; 2015-12-10 @ 17:45:23;</td>
+                        <td align="right">18974.0</td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 17:47:02</td>
+                        <td>HORSHAM</td>
+                        <td>COUNTY LINE RD &amp; WILLOW DR</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">20</td>
+                        <td align="right">40.114239000000005</td>
+                        <td align="right">-75.33850799999999</td>
+                        <td>PENN ST &amp; ARCH ST; NORRISTOWN; 2015-12-10 @ 17:43:45;</td>
+                        <td align="right">19401.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 17:47:02</td>
+                        <td>NORRISTOWN</td>
+                        <td>PENN ST &amp; ARCH ST</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">21</td>
+                        <td align="right">40.1179476</td>
+                        <td align="right">-75.20984759999999</td>
+                        <td>CHURCH RD &amp; REDCOAT DR; WHITEMARSH; 2015-12-10 @ 17:53:22;</td>
+                        <td align="right">19031.0</td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 17:57:02</td>
+                        <td>WHITEMARSH</td>
+                        <td>CHURCH RD &amp; REDCOAT DR</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">17</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">22</td>
+                        <td align="right">40.1990064</td>
+                        <td align="right">-75.3000584</td>
+                        <td>LILAC CT &amp; PRIMROSE DR; UPPER GWYNEDD; 2015-12-10 @ 17:59:24-Station:STA80;</td>
+                        <td align="right">19446.0</td>
+                        <td>Fire: APPLIANCE FIRE</td>
+                        <td>2015-12-10 18:02:01</td>
+                        <td>UPPER GWYNEDD</td>
+                        <td>LILAC CT &amp; PRIMROSE DR</td>
+                        <td>1</td>
+                        <td>Fire</td>
+                        <td> APPLIANCE FIRE</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">23</td>
+                        <td align="right">40.143325700000005</td>
+                        <td align="right">-75.42281899999999</td>
+                        <td>RT422  &amp; PAWLINGS RD OVERPASS; LOWER PROVIDENCE; 2015-12-10 @ 18:00:38;</td>
+                        <td align="right"></td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 18:02:02</td>
+                        <td>LOWER PROVIDENCE</td>
+                        <td>RT422  &amp; PAWLINGS RD OVERPASS</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">24</td>
+                        <td align="right">40.1532684</td>
+                        <td align="right">-75.18955759999999</td>
+                        <td>SUMMIT AVE &amp; RT309 UNDERPASS; UPPER DUBLIN; 2015-12-10 @ 17:58:22;</td>
+                        <td align="right"></td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 18:02:02</td>
+                        <td>UPPER DUBLIN</td>
+                        <td>SUMMIT AVE &amp; RT309 UNDERPASS</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">25</td>
+                        <td align="right">40.1330371</td>
+                        <td align="right">-75.40846309999999</td>
+                        <td>SHANNONDELL DR &amp; SHANNONDELL BLVD;  LOWER PROVIDENCE; Station 322A; 2015-12-10 @ 18:02:02;</td>
+                        <td align="right">19403.0</td>
+                        <td>EMS: GENERAL WEAKNESS</td>
+                        <td>2015-12-10 18:06:25</td>
+                        <td>LOWER PROVIDENCE</td>
+                        <td>SHANNONDELL DR &amp; SHANNONDELL BLVD</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> GENERAL WEAKNESS</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">26</td>
+                        <td align="right">40.1552833</td>
+                        <td align="right">-75.2642296</td>
+                        <td>PENLLYN BLUE BELL PIKE &amp; VILLAGE CIR;  WHITPAIN; Station 385; 2015-12-10 @ 18:02:38;</td>
+                        <td align="right">19422.0</td>
+                        <td>EMS: HEAD INJURY</td>
+                        <td>2015-12-10 18:06:25</td>
+                        <td>WHITPAIN</td>
+                        <td>PENLLYN BLUE BELL PIKE &amp; VILLAGE CIR</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> HEAD INJURY</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">27</td>
+                        <td align="right">40.0289031</td>
+                        <td align="right">-75.3518224</td>
+                        <td>EDENTON PL &amp; DURHAM DR; DELAWARE COUNTY; 2015-12-10 @ 18:05:19-Station:STA23;</td>
+                        <td align="right">19085.0</td>
+                        <td>Fire: CARBON MONOXIDE DETECTOR</td>
+                        <td>2015-12-10 18:06:25</td>
+                        <td>DELAWARE COUNTY</td>
+                        <td>EDENTON PL &amp; DURHAM DR</td>
+                        <td>1</td>
+                        <td>Fire</td>
+                        <td> CARBON MONOXIDE DETECTOR</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">28</td>
+                        <td align="right">40.0972222</td>
+                        <td align="right">-75.3761952</td>
+                        <td>SCHUYLKILL EXPY &amp; WEADLEY RD OVERPASS; UPPER MERION; 2015-12-10 @ 18:05:39;</td>
+                        <td align="right"></td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 18:06:26</td>
+                        <td>UPPER MERION</td>
+                        <td>SCHUYLKILL EXPY &amp; WEADLEY RD OVERPASS</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">29</td>
+                        <td align="right">40.209336900000004</td>
+                        <td align="right">-75.1352655</td>
+                        <td>COUNTY LINE RD &amp; WILLOW DR; HORSHAM; 2015-12-10 @ 18:10:40;</td>
+                        <td align="right">18974.0</td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 18:11:01</td>
+                        <td>HORSHAM</td>
+                        <td>COUNTY LINE RD &amp; WILLOW DR</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">30</td>
+                        <td align="right">40.0972222</td>
+                        <td align="right">-75.3761952</td>
+                        <td>SCHUYLKILL EXPY &amp; WEADLEY RD OVERPASS; UPPER MERION; 2015-12-10 @ 18:07:01;</td>
+                        <td align="right"></td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 18:11:01</td>
+                        <td>UPPER MERION</td>
+                        <td>SCHUYLKILL EXPY &amp; WEADLEY RD OVERPASS</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">31</td>
+                        <td align="right">40.300736</td>
+                        <td align="right">-75.3319733</td>
+                        <td>CORNWALL TER &amp; LIONS GATE CIR;  FRANCONIA; Station 339; 2015-12-10 @ 18:09:49;</td>
+                        <td align="right">18964.0</td>
+                        <td>EMS: RESPIRATORY EMERGENCY</td>
+                        <td>2015-12-10 18:12:01</td>
+                        <td>FRANCONIA</td>
+                        <td>CORNWALL TER &amp; LIONS GATE CIR</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> RESPIRATORY EMERGENCY</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">32</td>
+                        <td align="right">40.129397999999995</td>
+                        <td align="right">-75.33221340000001</td>
+                        <td>PINE ST &amp; W ROBERTS ST;  NORRISTOWN; Station 308A; 2015-12-10 @ 18:17:07;</td>
+                        <td align="right">19401.0</td>
+                        <td>EMS: UNKNOWN MEDICAL EMERGENCY</td>
+                        <td>2015-12-10 18:22:00</td>
+                        <td>NORRISTOWN</td>
+                        <td>PINE ST &amp; W ROBERTS ST</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> UNKNOWN MEDICAL EMERGENCY</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">33</td>
+                        <td align="right">40.297875899999994</td>
+                        <td align="right">-75.5812935</td>
+                        <td> ; NEW HANOVER; 2015-12-10 @ 18:20:28;</td>
+                        <td align="right">19525.0</td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 18:22:01</td>
+                        <td>NEW HANOVER</td>
+                        <td> </td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">34</td>
+                        <td align="right">40.0812601</td>
+                        <td align="right">-75.13702540000001</td>
+                        <td> ; CHELTENHAM; 2015-12-10 @ 18:20:28;</td>
+                        <td align="right"></td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 18:26:02</td>
+                        <td>CHELTENHAM</td>
+                        <td> </td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">35</td>
+                        <td align="right">40.09936210000001</td>
+                        <td align="right">-75.1500348</td>
+                        <td>E GLENSIDE AVE &amp; S KESWICK AVE; CHELTENHAM; 2015-12-10 @ 18:21:43;</td>
+                        <td align="right">19038.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 18:26:02</td>
+                        <td>CHELTENHAM</td>
+                        <td>E GLENSIDE AVE &amp; S KESWICK AVE</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">36</td>
+                        <td align="right">40.2212266</td>
+                        <td align="right">-75.2887369</td>
+                        <td>MORRIS RD &amp; MUHLENBURG DR; UPPER GWYNEDD; 2015-12-10 @ 18:23:13;</td>
+                        <td align="right"></td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 18:27:01</td>
+                        <td>UPPER GWYNEDD</td>
+                        <td>MORRIS RD &amp; MUHLENBURG DR</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">37</td>
+                        <td align="right">40.0738642</td>
+                        <td align="right">-75.31679720000001</td>
+                        <td>MOOREHEAD AVE &amp; FRONT ST; WEST CONSHOHOCKEN; 2015-12-10 @ 18:20:28;</td>
+                        <td align="right">19428.0</td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 18:27:02</td>
+                        <td>WEST CONSHOHOCKEN</td>
+                        <td>MOOREHEAD AVE &amp; FRONT ST</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">38</td>
+                        <td align="right">40.161731599999996</td>
+                        <td align="right">-75.1510554</td>
+                        <td>DRESHER RD &amp; WELSH RD; HORSHAM; 2015-12-10 @ 18:23:11;</td>
+                        <td align="right">19044.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 18:27:02</td>
+                        <td>HORSHAM</td>
+                        <td>DRESHER RD &amp; WELSH RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">39</td>
+                        <td align="right">40.0667184</td>
+                        <td align="right">-75.307176</td>
+                        <td>CONSHOHOCKEN STATE RD;  WEST CONSHOHOCKEN; Station 313A; 2015-12-10 @ 18:29:54;</td>
+                        <td align="right"></td>
+                        <td>EMS: VEHICLE ACCIDENT</td>
+                        <td>2015-12-10 18:32:02</td>
+                        <td>WEST CONSHOHOCKEN</td>
+                        <td>CONSHOHOCKEN STATE RD</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> VEHICLE ACCIDENT</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">40</td>
+                        <td align="right">40.0655304</td>
+                        <td align="right">-75.3078284</td>
+                        <td>CONSHOHOCKEN STATE RD &amp; MERION HILL LN; WEST CONSHOHOCKEN; 2015-12-10 @ 18:30:41;</td>
+                        <td align="right">19428.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 18:32:02</td>
+                        <td>WEST CONSHOHOCKEN</td>
+                        <td>CONSHOHOCKEN STATE RD &amp; MERION HILL LN</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">41</td>
+                        <td align="right">40.104206299999994</td>
+                        <td align="right">-75.3676652</td>
+                        <td>HAMPTON RD &amp; BELMONT RD; UPPER MERION; 2015-12-10 @ 18:32:25-Station:STA49;</td>
+                        <td align="right">19406.0</td>
+                        <td>Fire: GAS-ODOR/LEAK</td>
+                        <td>2015-12-10 18:37:01</td>
+                        <td>UPPER MERION</td>
+                        <td>HAMPTON RD &amp; BELMONT RD</td>
+                        <td>1</td>
+                        <td>Fire</td>
+                        <td> GAS-ODOR/LEAK</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">42</td>
+                        <td align="right">40.122779799999996</td>
+                        <td align="right">-75.2672413</td>
+                        <td>SPARANGO LN &amp; MELISSA WAY;  PLYMOUTH; Station 308; 2015-12-10 @ 18:38:18;</td>
+                        <td align="right">19462.0</td>
+                        <td>EMS: UNRESPONSIVE SUBJECT</td>
+                        <td>2015-12-10 18:42:00</td>
+                        <td>PLYMOUTH</td>
+                        <td>SPARANGO LN &amp; MELISSA WAY</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> UNRESPONSIVE SUBJECT</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">43</td>
+                        <td align="right">40.091055</td>
+                        <td align="right">-75.38436479999999</td>
+                        <td>ALLENDALE RD &amp; WILLS BLVD; UPPER MERION; 2015-12-10 @ 18:37:00;</td>
+                        <td align="right">19406.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 18:42:01</td>
+                        <td>UPPER MERION</td>
+                        <td>ALLENDALE RD &amp; WILLS BLVD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">44</td>
+                        <td align="right">40.0249667</td>
+                        <td align="right">-75.2829046</td>
+                        <td>ROSEMONT AVE &amp; DEAD END;  LOWER MERION; Station 313; 2015-12-10 @ 18:43:07;</td>
+                        <td align="right"></td>
+                        <td>EMS: CARDIAC EMERGENCY</td>
+                        <td>2015-12-10 18:47:01</td>
+                        <td>LOWER MERION</td>
+                        <td>ROSEMONT AVE &amp; DEAD END</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> CARDIAC EMERGENCY</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">45</td>
+                        <td align="right">40.1257391</td>
+                        <td align="right">-75.339822</td>
+                        <td>W WOOD ST &amp; MARKLEY ST; NORRISTOWN; 2015-12-10 @ 18:47:18;</td>
+                        <td align="right">19401.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 18:51:01</td>
+                        <td>NORRISTOWN</td>
+                        <td>W WOOD ST &amp; MARKLEY ST</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">46</td>
+                        <td align="right">40.2249227</td>
+                        <td align="right">-75.5280446</td>
+                        <td>LINFIELD TRAPPE RD;  LIMERICK; Station 324A; 2015-12-10 @ 18:50:37;</td>
+                        <td align="right">19468.0</td>
+                        <td>EMS: VEHICLE ACCIDENT</td>
+                        <td>2015-12-10 18:52:00</td>
+                        <td>LIMERICK</td>
+                        <td>LINFIELD TRAPPE RD</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> VEHICLE ACCIDENT</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">47</td>
+                        <td align="right">40.2249227</td>
+                        <td align="right">-75.5280446</td>
+                        <td>LINFIELD TRAPPE RD; LIMERICK; 2015-12-10 @ 18:50:23-Station:STA51;</td>
+                        <td align="right">19468.0</td>
+                        <td>Fire: VEHICLE ACCIDENT</td>
+                        <td>2015-12-10 18:52:00</td>
+                        <td>LIMERICK</td>
+                        <td>LINFIELD TRAPPE RD</td>
+                        <td>1</td>
+                        <td>Fire</td>
+                        <td> VEHICLE ACCIDENT</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">48</td>
+                        <td align="right">40.2249227</td>
+                        <td align="right">-75.5280446</td>
+                        <td>AUTO PARK BLVD &amp; LINFIELD TRAPPE RD; LIMERICK; 2015-12-10 @ 18:51:34;</td>
+                        <td align="right">19468.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 18:56:02</td>
+                        <td>LIMERICK</td>
+                        <td>AUTO PARK BLVD &amp; LINFIELD TRAPPE RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">49</td>
+                        <td align="right">40.2309343</td>
+                        <td align="right">-75.5221245</td>
+                        <td>LINFIELD TRAPPE RD &amp; RAMP N LEWIS RD TO RT422 EB; LIMERICK; 2015-12-10 @ 18:51:01;</td>
+                        <td align="right">19468.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 18:56:02</td>
+                        <td>LIMERICK</td>
+                        <td>LINFIELD TRAPPE RD &amp; RAMP N LEWIS RD TO RT422 EB</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">18</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">50</td>
+                        <td align="right">40.251523</td>
+                        <td align="right">-75.329557</td>
+                        <td>DOCK DR &amp; DEAD END;  TOWAMENCIN; Station 345B; 2015-12-10 @ 18:59:50;</td>
+                        <td align="right"></td>
+                        <td>EMS: ALTERED MENTAL STATUS</td>
+                        <td>2015-12-10 19:01:02</td>
+                        <td>TOWAMENCIN</td>
+                        <td>DOCK DR &amp; DEAD END</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> ALTERED MENTAL STATUS</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">51</td>
+                        <td align="right">40.1653934</td>
+                        <td align="right">-75.2829046</td>
+                        <td>HARROW LN &amp; DEAD END; WHITPAIN; 2015-12-10 @ 18:56:51-Station:STA33;</td>
+                        <td align="right"></td>
+                        <td>Fire: FIRE ALARM</td>
+                        <td>2015-12-10 19:02:01</td>
+                        <td>WHITPAIN</td>
+                        <td>HARROW LN &amp; DEAD END</td>
+                        <td>1</td>
+                        <td>Fire</td>
+                        <td> FIRE ALARM</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">52</td>
+                        <td align="right">40.2313745</td>
+                        <td align="right">-75.2797803</td>
+                        <td>CHURCH RD &amp; E HANCOCK ST; LANSDALE; 2015-12-10 @ 19:06:07;</td>
+                        <td align="right">19446.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 19:11:01</td>
+                        <td>LANSDALE</td>
+                        <td>CHURCH RD &amp; E HANCOCK ST</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">53</td>
+                        <td align="right">40.3209665</td>
+                        <td align="right">-75.6113493</td>
+                        <td>WILSON AVE &amp; E PHILADELPHIA AVE;  DOUGLASS; Station 332; 2015-12-10 @ 19:07:27;</td>
+                        <td align="right">19525.0</td>
+                        <td>EMS: CVA/STROKE</td>
+                        <td>2015-12-10 19:12:01</td>
+                        <td>DOUGLASS</td>
+                        <td>WILSON AVE &amp; E PHILADELPHIA AVE</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> CVA/STROKE</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">54</td>
+                        <td align="right">40.051283399999996</td>
+                        <td align="right">-75.2968515</td>
+                        <td>LAFAYETTE RD &amp; CONSHOHOCKEN STATE RD; LOWER MERION; 2015-12-10 @ 19:09:42-Station:STA24;</td>
+                        <td align="right">19010.0</td>
+                        <td>Fire: FIRE ALARM</td>
+                        <td>2015-12-10 19:12:01</td>
+                        <td>LOWER MERION</td>
+                        <td>LAFAYETTE RD &amp; CONSHOHOCKEN STATE RD</td>
+                        <td>1</td>
+                        <td>Fire</td>
+                        <td> FIRE ALARM</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">55</td>
+                        <td align="right">40.2432612</td>
+                        <td align="right">-75.2960797</td>
+                        <td>W MT VERNON ST &amp; S MITCHELL AVE; LANSDALE; 2015-12-10 @ 19:08:43;</td>
+                        <td align="right">19446.0</td>
+                        <td>Traffic: ROAD OBSTRUCTION -</td>
+                        <td>2015-12-10 19:12:01</td>
+                        <td>LANSDALE</td>
+                        <td>W MT VERNON ST &amp; S MITCHELL AVE</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> ROAD OBSTRUCTION -</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">56</td>
+                        <td align="right">40.1568468</td>
+                        <td align="right">-75.10199420000001</td>
+                        <td>YORK RD &amp; RR CROSSING;  UPPER MORELAND; Station 381; 2015-12-10 @ 19:18:31;</td>
+                        <td align="right"></td>
+                        <td>EMS: UNKNOWN MEDICAL EMERGENCY</td>
+                        <td>2015-12-10 19:26:02</td>
+                        <td>UPPER MORELAND</td>
+                        <td>YORK RD &amp; RR CROSSING</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> UNKNOWN MEDICAL EMERGENCY</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">57</td>
+                        <td align="right">40.1330371</td>
+                        <td align="right">-75.40846309999999</td>
+                        <td>SHANNONDELL DR &amp; SHANNONDELL BLVD;  LOWER PROVIDENCE; Station 322A; 2015-12-10 @ 19:12:13;</td>
+                        <td align="right">19403.0</td>
+                        <td>EMS: CVA/STROKE</td>
+                        <td>2015-12-10 19:26:03</td>
+                        <td>LOWER PROVIDENCE</td>
+                        <td>SHANNONDELL DR &amp; SHANNONDELL BLVD</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> CVA/STROKE</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">58</td>
+                        <td align="right">40.089973</td>
+                        <td align="right">-75.14108490000001</td>
+                        <td>FERNBROOK AVE &amp; MAPLE AVE;  CHELTENHAM; Station 358A; 2015-12-10 @ 19:15:10;</td>
+                        <td align="right">19095.0</td>
+                        <td>EMS: SUBJECT IN PAIN</td>
+                        <td>2015-12-10 19:26:03</td>
+                        <td>CHELTENHAM</td>
+                        <td>FERNBROOK AVE &amp; MAPLE AVE</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> SUBJECT IN PAIN</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">59</td>
+                        <td align="right">40.2470021</td>
+                        <td align="right">-75.6525972</td>
+                        <td>KING ST &amp; N YORK ST;  POTTSTOWN; Station 329; 2015-12-10 @ 19:17:13;</td>
+                        <td align="right">19464.0</td>
+                        <td>EMS: SUBJECT IN PAIN</td>
+                        <td>2015-12-10 19:26:03</td>
+                        <td>POTTSTOWN</td>
+                        <td>KING ST &amp; N YORK ST</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> SUBJECT IN PAIN</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">60</td>
+                        <td align="right">40.0818005</td>
+                        <td align="right">-75.2531616</td>
+                        <td>RIDGE PIKE &amp; CHURCH RD; WHITEMARSH; 2015-12-10 @ 19:19:19;</td>
+                        <td align="right">19444.0</td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 19:26:04</td>
+                        <td>WHITEMARSH</td>
+                        <td>RIDGE PIKE &amp; CHURCH RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">61</td>
+                        <td align="right">40.0203725</td>
+                        <td align="right">-75.3092584</td>
+                        <td>W MONTGOMERY AVE &amp; PENNSWOOD RD; LOWER MERION; 2015-12-10 @ 19:25:22;</td>
+                        <td align="right">19041.0</td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 19:26:04</td>
+                        <td>LOWER MERION</td>
+                        <td>W MONTGOMERY AVE &amp; PENNSWOOD RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">62</td>
+                        <td align="right">40.2306331</td>
+                        <td align="right">-75.2785377</td>
+                        <td>CEDAR ST &amp; E HANCOCK ST; LANSDALE; 2015-12-10 @ 19:06:07;</td>
+                        <td align="right">19446.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 19:26:05</td>
+                        <td>LANSDALE</td>
+                        <td>CEDAR ST &amp; E HANCOCK ST</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">63</td>
+                        <td align="right">40.1173446</td>
+                        <td align="right">-75.2111725</td>
+                        <td>FAIRFIELD DR &amp; FARMAR LN;  WHITEMARSH; Station 318; 2015-12-10 @ 19:23:08;</td>
+                        <td align="right">19031.0</td>
+                        <td>EMS: HEMORRHAGING</td>
+                        <td>2015-12-10 19:27:01</td>
+                        <td>WHITEMARSH</td>
+                        <td>FAIRFIELD DR &amp; FARMAR LN</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> HEMORRHAGING</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">64</td>
+                        <td align="right">40.267924900000004</td>
+                        <td align="right">-75.31438229999999</td>
+                        <td>CLEMENS RD &amp; FORTY FOOT RD;  HATFIELD TOWNSHIP; Station 345; 2015-12-10 @ 19:25:07;</td>
+                        <td align="right">19440.0</td>
+                        <td>EMS: UNKNOWN MEDICAL EMERGENCY</td>
+                        <td>2015-12-10 19:27:01</td>
+                        <td>HATFIELD TOWNSHIP</td>
+                        <td>CLEMENS RD &amp; FORTY FOOT RD</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> UNKNOWN MEDICAL EMERGENCY</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">65</td>
+                        <td align="right">40.2456734</td>
+                        <td align="right">-75.2796667</td>
+                        <td>BROAD ST &amp; E 6TH ST;  LANSDALE; Station 345; 2015-12-10 @ 19:22:25;</td>
+                        <td align="right">19446.0</td>
+                        <td>EMS: FALL VICTIM</td>
+                        <td>2015-12-10 19:27:02</td>
+                        <td>LANSDALE</td>
+                        <td>BROAD ST &amp; E 6TH ST</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> FALL VICTIM</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">66</td>
+                        <td align="right">40.1199455</td>
+                        <td align="right">-75.3383214</td>
+                        <td>DEKALB ST &amp; E ELM ST;  NORRISTOWN; Station 308A; 2015-12-10 @ 19:21:47;</td>
+                        <td align="right">19401.0</td>
+                        <td>EMS: RESPIRATORY EMERGENCY</td>
+                        <td>2015-12-10 19:27:02</td>
+                        <td>NORRISTOWN</td>
+                        <td>DEKALB ST &amp; E ELM ST</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> RESPIRATORY EMERGENCY</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">67</td>
+                        <td align="right">40.105308</td>
+                        <td align="right">-75.341987</td>
+                        <td>4TH ST &amp; DEPOT ST;  BRIDGEPORT; Station 317; 2015-12-10 @ 19:35:47;</td>
+                        <td align="right">19405.0</td>
+                        <td>EMS: ASSAULT VICTIM</td>
+                        <td>2015-12-10 19:39:55</td>
+                        <td>BRIDGEPORT</td>
+                        <td>4TH ST &amp; DEPOT ST</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> ASSAULT VICTIM</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">68</td>
+                        <td align="right">40.28902670000001</td>
+                        <td align="right">-75.3995896</td>
+                        <td>MAIN ST &amp; OLD SUMNEYTOWN PIKE;  LOWER SALFORD; Station 344; 2015-12-10 @ 19:38:31;</td>
+                        <td align="right">19438.0</td>
+                        <td>EMS: FALL VICTIM</td>
+                        <td>2015-12-10 19:42:03</td>
+                        <td>LOWER SALFORD</td>
+                        <td>MAIN ST &amp; OLD SUMNEYTOWN PIKE</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> FALL VICTIM</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">69</td>
+                        <td align="right">40.245731</td>
+                        <td align="right">-75.34168690000001</td>
+                        <td>TOWAMENCIN AVE &amp; SUMNEYTOWN PIKE;  TOWAMENCIN; Station 345B; 2015-12-10 @ 19:43:24;</td>
+                        <td align="right">19438.0</td>
+                        <td>EMS: RESPIRATORY EMERGENCY</td>
+                        <td>2015-12-10 19:47:01</td>
+                        <td>TOWAMENCIN</td>
+                        <td>TOWAMENCIN AVE &amp; SUMNEYTOWN PIKE</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> RESPIRATORY EMERGENCY</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">70</td>
+                        <td align="right">40.1330371</td>
+                        <td align="right">-75.40846309999999</td>
+                        <td>SHANNONDELL DR &amp; SHANNONDELL BLVD;  LOWER PROVIDENCE; Station 322A; 2015-12-10 @ 19:49:37;</td>
+                        <td align="right">19403.0</td>
+                        <td>EMS: SUBJECT IN PAIN</td>
+                        <td>2015-12-10 19:52:01</td>
+                        <td>LOWER PROVIDENCE</td>
+                        <td>SHANNONDELL DR &amp; SHANNONDELL BLVD</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> SUBJECT IN PAIN</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">71</td>
+                        <td align="right">40.1546593</td>
+                        <td align="right">-75.22154350000001</td>
+                        <td>BUTLER AVE &amp; N RIDGE AVE;  AMBLER; Station 351; 2015-12-10 @ 19:54:45;</td>
+                        <td align="right">19002.0</td>
+                        <td>EMS: SEIZURES</td>
+                        <td>2015-12-10 19:57:01</td>
+                        <td>AMBLER</td>
+                        <td>BUTLER AVE &amp; N RIDGE AVE</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> SEIZURES</td>
+                        <td align="right">19</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">72</td>
+                        <td align="right">40.0249667</td>
+                        <td align="right">-75.2829046</td>
+                        <td>AVIGNON DR &amp; DEAD END; LOWER MERION; 2015-12-10 @ 20:01:29-Station:STA24;</td>
+                        <td align="right"></td>
+                        <td>Fire: GAS-ODOR/LEAK</td>
+                        <td>2015-12-10 20:06:01</td>
+                        <td>LOWER MERION</td>
+                        <td>AVIGNON DR &amp; DEAD END</td>
+                        <td>1</td>
+                        <td>Fire</td>
+                        <td> GAS-ODOR/LEAK</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">73</td>
+                        <td align="right">39.9867698</td>
+                        <td align="right">-75.27543349999999</td>
+                        <td>LLOYD LN &amp; DRAYTON LN;  LOWER MERION; Station 313; 2015-12-10 @ 20:05:27;</td>
+                        <td align="right">19096.0</td>
+                        <td>EMS: DIABETIC EMERGENCY</td>
+                        <td>2015-12-10 20:07:01</td>
+                        <td>LOWER MERION</td>
+                        <td>LLOYD LN &amp; DRAYTON LN</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> DIABETIC EMERGENCY</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">74</td>
+                        <td align="right">40.2537881</td>
+                        <td align="right">-75.2164375</td>
+                        <td>DELMAR CT &amp; CLAREMONT DR;  MONTGOMERY; Station 345A; 2015-12-10 @ 20:10:27;</td>
+                        <td align="right">19454.0</td>
+                        <td>EMS: SUBJECT IN PAIN</td>
+                        <td>2015-12-10 20:12:01</td>
+                        <td>MONTGOMERY</td>
+                        <td>DELMAR CT &amp; CLAREMONT DR</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> SUBJECT IN PAIN</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">75</td>
+                        <td align="right">40.245005799999994</td>
+                        <td align="right">-75.59304759999999</td>
+                        <td>HIGH ST &amp; BROWN ST;  LOWER POTTSGROVE; Station 329; 2015-12-10 @ 20:09:47;</td>
+                        <td align="right">19464.0</td>
+                        <td>EMS: UNKNOWN MEDICAL EMERGENCY</td>
+                        <td>2015-12-10 20:12:01</td>
+                        <td>LOWER POTTSGROVE</td>
+                        <td>HIGH ST &amp; BROWN ST</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> UNKNOWN MEDICAL EMERGENCY</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">76</td>
+                        <td align="right">40.295271</td>
+                        <td align="right">-75.3284004</td>
+                        <td>COWPATH RD &amp; MEADOW WOOD LN;  FRANCONIA; Station 339; 2015-12-10 @ 20:06:36;</td>
+                        <td align="right">18964.0</td>
+                        <td>EMS: HEAD INJURY</td>
+                        <td>2015-12-10 20:12:02</td>
+                        <td>FRANCONIA</td>
+                        <td>COWPATH RD &amp; MEADOW WOOD LN</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> HEAD INJURY</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">77</td>
+                        <td align="right">40.2048367</td>
+                        <td align="right">-75.22282109999999</td>
+                        <td>WELSH RD &amp; LOWER STATE RD; HORSHAM; 2015-12-10 @ 20:07:25;</td>
+                        <td align="right">19002.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 20:12:03</td>
+                        <td>HORSHAM</td>
+                        <td>WELSH RD &amp; LOWER STATE RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">78</td>
+                        <td align="right">40.2442013</td>
+                        <td align="right">-75.582403</td>
+                        <td>HIGH ST &amp; S PARK RD; LOWER POTTSGROVE; 2015-12-10 @ 20:24:17;</td>
+                        <td align="right">19464.0</td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 20:27:02</td>
+                        <td>LOWER POTTSGROVE</td>
+                        <td>HIGH ST &amp; S PARK RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">79</td>
+                        <td align="right">40.231511100000006</td>
+                        <td align="right">-75.65455990000001</td>
+                        <td>HANOVER ST &amp; E URNER ST;  CHESTER COUNTY; Station 3A84; 2015-12-10 @ 20:26:35;</td>
+                        <td align="right">19465.0</td>
+                        <td>EMS: FALL VICTIM</td>
+                        <td>2015-12-10 20:31:01</td>
+                        <td>CHESTER COUNTY</td>
+                        <td>HANOVER ST &amp; E URNER ST</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> FALL VICTIM</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">80</td>
+                        <td align="right">40.114202299999995</td>
+                        <td align="right">-75.3268041</td>
+                        <td>NEW HOPE ST &amp; CEDAR LN;  NORRISTOWN; Station 308A; 2015-12-10 @ 20:26:14;</td>
+                        <td align="right">19401.0</td>
+                        <td>EMS: FALL VICTIM</td>
+                        <td>2015-12-10 20:31:01</td>
+                        <td>NORRISTOWN</td>
+                        <td>NEW HOPE ST &amp; CEDAR LN</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> FALL VICTIM</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">81</td>
+                        <td align="right">40.003954799999995</td>
+                        <td align="right">-75.22070090000001</td>
+                        <td>BELMONT AVE &amp; E CITY AVE; LOWER MERION; 2015-12-10 @ 20:36:49;</td>
+                        <td align="right">19004.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 20:41:02</td>
+                        <td>LOWER MERION</td>
+                        <td>BELMONT AVE &amp; E CITY AVE</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">82</td>
+                        <td align="right">40.2906932</td>
+                        <td align="right">-75.5766612</td>
+                        <td>SWAMP PIKE &amp; ROMIG RD;  NEW HANOVER; Station 332; 2015-12-10 @ 20:45:14;</td>
+                        <td align="right">19525.0</td>
+                        <td>EMS: SYNCOPAL EPISODE</td>
+                        <td>2015-12-10 20:47:01</td>
+                        <td>NEW HANOVER</td>
+                        <td>SWAMP PIKE &amp; ROMIG RD</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> SYNCOPAL EPISODE</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">83</td>
+                        <td align="right">40.0074347</td>
+                        <td align="right">-75.24898859999999</td>
+                        <td>MEADOW LN &amp; MONTGOMERY AVE; LOWER MERION; 2015-12-10 @ 20:43:44-Station:STA28;</td>
+                        <td align="right">19066.0</td>
+                        <td>Fire: CARBON MONOXIDE DETECTOR</td>
+                        <td>2015-12-10 20:47:01</td>
+                        <td>LOWER MERION</td>
+                        <td>MEADOW LN &amp; MONTGOMERY AVE</td>
+                        <td>1</td>
+                        <td>Fire</td>
+                        <td> CARBON MONOXIDE DETECTOR</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">84</td>
+                        <td align="right">40.2304548</td>
+                        <td align="right">-75.63398149999999</td>
+                        <td>WORTH BLVD &amp; TYSON ST;  CHESTER COUNTY; Station 3A84; 2015-12-10 @ 20:50:14;</td>
+                        <td align="right">19465.0</td>
+                        <td>EMS: MEDICAL ALERT ALARM</td>
+                        <td>2015-12-10 20:52:02</td>
+                        <td>CHESTER COUNTY</td>
+                        <td>WORTH BLVD &amp; TYSON ST</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> MEDICAL ALERT ALARM</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">85</td>
+                        <td align="right">40.0348666</td>
+                        <td align="right">-75.3276061</td>
+                        <td>MONTGOMERY AVE &amp; THORNBROOK AVE;  LOWER MERION; Station 313; 2015-12-10 @ 20:49:08;</td>
+                        <td align="right">19010.0</td>
+                        <td>EMS: RESPIRATORY EMERGENCY</td>
+                        <td>2015-12-10 20:52:02</td>
+                        <td>LOWER MERION</td>
+                        <td>MONTGOMERY AVE &amp; THORNBROOK AVE</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> RESPIRATORY EMERGENCY</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">86</td>
+                        <td align="right">40.0167386</td>
+                        <td align="right">-75.26515959999999</td>
+                        <td>PENN VALLEY RD &amp; MANOR RD;  LOWER MERION; Station 313; 2015-12-10 @ 20:53:30;</td>
+                        <td align="right">19072.0</td>
+                        <td>EMS: ABDOMINAL PAINS</td>
+                        <td>2015-12-10 20:57:01</td>
+                        <td>LOWER MERION</td>
+                        <td>PENN VALLEY RD &amp; MANOR RD</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> ABDOMINAL PAINS</td>
+                        <td align="right">20</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">87</td>
+                        <td align="right">40.414248799999996</td>
+                        <td align="right">-75.5090155</td>
+                        <td>BLOMMER DR &amp; GRAVEL PIKE; UPPER HANOVER; 2015-12-10 @ 21:01:26-Station:STA38;</td>
+                        <td align="right">18041.0</td>
+                        <td>Fire: FIRE ALARM</td>
+                        <td>2015-12-10 21:07:01</td>
+                        <td>UPPER HANOVER</td>
+                        <td>BLOMMER DR &amp; GRAVEL PIKE</td>
+                        <td>1</td>
+                        <td>Fire</td>
+                        <td> FIRE ALARM</td>
+                        <td align="right">21</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">88</td>
+                        <td align="right">40.0809133</td>
+                        <td align="right">-75.20266509999999</td>
+                        <td>STENTON AVE &amp; E EVERGREEN AVE;  SPRINGFIELD; Station 311; 2015-12-10 @ 21:10:36;</td>
+                        <td align="right">19038.0</td>
+                        <td>EMS: RESPIRATORY EMERGENCY</td>
+                        <td>2015-12-10 21:12:01</td>
+                        <td>SPRINGFIELD</td>
+                        <td>STENTON AVE &amp; E EVERGREEN AVE</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> RESPIRATORY EMERGENCY</td>
+                        <td align="right">21</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">89</td>
+                        <td align="right">40.2372576</td>
+                        <td align="right">-75.2204062</td>
+                        <td>HILLSIDE CT &amp; NESHAMINY FALLS CIR;  MONTGOMERY; Station 345A; 2015-12-10 @ 21:12:35;</td>
+                        <td align="right">19454.0</td>
+                        <td>EMS: UNRESPONSIVE SUBJECT</td>
+                        <td>2015-12-10 21:17:02</td>
+                        <td>MONTGOMERY</td>
+                        <td>HILLSIDE CT &amp; NESHAMINY FALLS CIR</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> UNRESPONSIVE SUBJECT</td>
+                        <td align="right">21</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">90</td>
+                        <td align="right">40.250015600000005</td>
+                        <td align="right">-75.5921595</td>
+                        <td>N PLEASANT VIEW RD &amp; WELSH DR; LOWER POTTSGROVE; 2015-12-10 @ 21:19:21;</td>
+                        <td align="right">19464.0</td>
+                        <td>Traffic: ROAD OBSTRUCTION -</td>
+                        <td>2015-12-10 21:22:00</td>
+                        <td>LOWER POTTSGROVE</td>
+                        <td>N PLEASANT VIEW RD &amp; WELSH DR</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> ROAD OBSTRUCTION -</td>
+                        <td align="right">21</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">91</td>
+                        <td align="right">40.2469315</td>
+                        <td align="right">-75.6439204</td>
+                        <td>CHESTNUT ST &amp; N FRANKLIN ST; POTTSTOWN; 2015-12-10 @ 21:24:47-Station:STA69;</td>
+                        <td align="right">19464.0</td>
+                        <td>Fire: PUMP DETAIL</td>
+                        <td>2015-12-10 21:27:01</td>
+                        <td>POTTSTOWN</td>
+                        <td>CHESTNUT ST &amp; N FRANKLIN ST</td>
+                        <td>1</td>
+                        <td>Fire</td>
+                        <td> PUMP DETAIL</td>
+                        <td align="right">21</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">92</td>
+                        <td align="right">40.230284000000005</td>
+                        <td align="right">-75.3540007</td>
+                        <td>BUSTARD RD &amp; KRIEBEL RD; TOWAMENCIN; 2015-12-10 @ 21:31:19;</td>
+                        <td align="right">19438.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 21:37:01</td>
+                        <td>TOWAMENCIN</td>
+                        <td>BUSTARD RD &amp; KRIEBEL RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">21</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">93</td>
+                        <td align="right">40.085487</td>
+                        <td align="right">-75.0977084</td>
+                        <td>FOX CHASE RD &amp; LOS ANGELES AVE; ROCKLEDGE; 2015-12-10 @ 21:36:01-Station:STA9;</td>
+                        <td align="right">19046.0</td>
+                        <td>Fire: FIRE INVESTIGATION</td>
+                        <td>2015-12-10 21:41:00</td>
+                        <td>ROCKLEDGE</td>
+                        <td>FOX CHASE RD &amp; LOS ANGELES AVE</td>
+                        <td>1</td>
+                        <td>Fire</td>
+                        <td> FIRE INVESTIGATION</td>
+                        <td align="right">21</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">94</td>
+                        <td align="right">40.234417799999996</td>
+                        <td align="right">-75.3513217</td>
+                        <td>BUSTARD RD &amp; OLD MORRIS RD; TOWAMENCIN; 2015-12-10 @ 21:31:19;</td>
+                        <td align="right">19438.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 21:47:01</td>
+                        <td>TOWAMENCIN</td>
+                        <td>BUSTARD RD &amp; OLD MORRIS RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">21</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">95</td>
+                        <td align="right">40.0830785</td>
+                        <td align="right">-75.1011171</td>
+                        <td>SHELMIRE ST &amp; CEDAR RD; ABINGTON; 2015-12-10 @ 21:47:14;</td>
+                        <td align="right">19027.0</td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 21:52:01</td>
+                        <td>ABINGTON</td>
+                        <td>SHELMIRE ST &amp; CEDAR RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">21</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">96</td>
+                        <td align="right">40.27630429999999</td>
+                        <td align="right">-75.56502359999999</td>
+                        <td>SWAMP PIKE &amp; SANATOGA RD; NEW HANOVER; 2015-12-10 @ 21:56:14;</td>
+                        <td align="right">19525.0</td>
+                        <td>Traffic: DISABLED VEHICLE -</td>
+                        <td>2015-12-10 22:01:01</td>
+                        <td>NEW HANOVER</td>
+                        <td>SWAMP PIKE &amp; SANATOGA RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> DISABLED VEHICLE -</td>
+                        <td align="right">22</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">97</td>
+                        <td align="right">40.0953195</td>
+                        <td align="right">-75.1934818</td>
+                        <td>CHELTENHAM AVE &amp; DELPHINE RD; SPRINGFIELD; 2015-12-10 @ 21:58:11;</td>
+                        <td align="right">19038.0</td>
+                        <td>Traffic: VEHICLE ACCIDENT -</td>
+                        <td>2015-12-10 22:02:01</td>
+                        <td>SPRINGFIELD</td>
+                        <td>CHELTENHAM AVE &amp; DELPHINE RD</td>
+                        <td>1</td>
+                        <td>Traffic</td>
+                        <td> VEHICLE ACCIDENT -</td>
+                        <td align="right">22</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">98</td>
+                        <td align="right">40.151475899999994</td>
+                        <td align="right">-75.3966243</td>
+                        <td>MARK LN &amp; IVY CIR;  LOWER PROVIDENCE; Station 322; 2015-12-10 @ 22:03:14;</td>
+                        <td align="right">19403.0</td>
+                        <td>EMS: CVA/STROKE</td>
+                        <td>2015-12-10 22:07:02</td>
+                        <td>LOWER PROVIDENCE</td>
+                        <td>MARK LN &amp; IVY CIR</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> CVA/STROKE</td>
+                        <td align="right">22</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        <tr>
+                        <td align="right">99</td>
+                        <td align="right">40.127611</td>
+                        <td align="right">-75.3799147</td>
+                        <td>HEMLOCK RD &amp; SHIRLEY LN;  WEST NORRITON; Station 308B; 2015-12-10 @ 22:24:21;</td>
+                        <td align="right">19403.0</td>
+                        <td>EMS: FALL VICTIM</td>
+                        <td>2015-12-10 22:27:01</td>
+                        <td>WEST NORRITON</td>
+                        <td>HEMLOCK RD &amp; SHIRLEY LN</td>
+                        <td>1</td>
+                        <td>EMS</td>
+                        <td> FALL VICTIM</td>
+                        <td align="right">22</td>
+                        <td align="right">12</td>
+                        <td>Thu</td>
+                        <td>2015-12-10</td>
+                        </tr>
+                        </tbody></table>
+             
+            </div>
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
