@@ -53,10 +53,13 @@ h4 {
     color: rgb(255, 255, 255) !important;
     
 }
-
+table, th, td {
+    border: 1px solid black;
+}
 .container {
     width: 100%;
 }
+
 
 table{   
     padding-top: 200px;
