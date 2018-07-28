@@ -28,7 +28,6 @@ function displayData(data, startYear, endYear) {
         ]
     });
 
-   
 
     $("#tab-graph").empty().append("<div id='outputGraph' style='width:100%;height:500px'></div>");
     // we have to select the graph tab because canvas has to be shown to draw on it
